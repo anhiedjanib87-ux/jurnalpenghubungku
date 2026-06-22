@@ -148,7 +148,7 @@
         <section id="view-home" class="view space-y-8">
             <div class="text-center py-8">
                 <h2 class="text-4xl font-black text-slate-800 md:text-5xl">
-                    Jurnal Penghubung Kelas 🌈
+                    JURNAL PENGHUBUNG KELAS 
                 </h2>
                 <p class="text-slate-400 mt-2 font-bold text-sm md:text-base">
                     Pilih nama Ananda, masukkan PIN, dan pantau perkembangan harian
@@ -276,34 +276,6 @@
     <script>
         // Ganti URL ini dengan URL Apps Script Web App Anda jika ingin disambungkan ke Google Sheets asli
         const API_URL = 'https://script.google.com/macros/s/AKfycbyLHYTqEnSFYa-tUctdBGBxTGkbTCZ4ngP6G6te7Nv7LMS2Cc8SVz2Q2zjr1WE0IxUh/exec';
-
-        // Data Mocking Awal untuk Keperluan "Vibe Coding" Mandiri (Offline / Tanpa Backend Dulu)
-        let appData = { 
-            students: [
-                {
-                    id: "S01",
-                    nama: "Ahmad Rayyan",
-                    pass: "123456",
-                    foto: "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=150&auto=format&fit=crop",
-                    karya: [
-                        { id: "J01", judul: "Interaksi Sosial Harian", deskripsi: "Rayyan hari ini sangat aktif membantu membagikan buku cerita ke teman-teman sekelasnya. Sikap kepemimpinannya mulai terlihat menonjol.", date: new Date().toISOString(), thumb: "https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=500&auto=format&fit=crop" }
-                    ],
-                    percakapan: [
-                        { id: "C01", workId: "J01", pesanWali: "Alhamdulillah, terima kasih bimbingannya bu. Di rumah Rayyan juga sekarang mulai rajin membereskan mainannya sendiri.", balasanGuru: "Sama-sama mama Rayyan, perkembangan yang hebat! Mari kita jaga konsistensinya.", date: new Date().toISOString() }
-                    ]
-                },
-                {
-                    id: "S02",
-                    nama: "Siti Aliyah",
-                    pass: "111111",
-                    foto: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=150&auto=format&fit=crop",
-                    karya: [
-                        { id: "J02", judul: "Perkembangan Motorik Halus", deskripsi: "Aliyah sudah bisa menggunting pola lingkaran dengan sangat rapi dan sabar.", date: new Date().toISOString(), thumb: "" }
-                    ],
-                    percakapan: []
-                }
-            ] 
-        };
 
         let isAdminLoggedIn = false;
         let currentStudentId = null;
